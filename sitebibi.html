@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convite da Bibi :)</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: url('https://png.pngtree.com/background/20210710/original/pngtree-plant-flowers-background-design-picture-image_975811.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #d63384;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+        }
+        .convite {
+            background: #fff;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 0 15px #d63384;
+            border: 15px solid transparent;
+            border-image: url('https://img.freepik.com/vetores-gratis/coroa-floral-rosa-amarela-com-aquarela_65186-3460.png') 30 round;
+        }
+        .logo {
+            width: 220px;
+	    height: auto;
+        }
+        h1 {
+            color: #d63384;
+        }
+        .detalhes {
+            font-size: 18px;
+            margin: 15px 0;
+        }
+        .formulario {
+            margin-top: 20px;
+            padding: 15px;
+            background: #fff0f6;
+            color: #d63384;
+            border-radius: 10px;
+            box-shadow: 0 0 10px #d63384;
+        }
+        input, select, button {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        button {
+            background: #d63384;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #b0276e;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="convite">
+           <img class="logo" src="https://i.postimg.cc/hGBzBhGs/bibiagrvai.jpg" alt="Bibi">
+            <h1>Bibi's Party</h1>
+            <p class="detalhes">Venha comemorar o aniversário da nossa estrela <strong>Bibi</strong>!</p>
+            <p class="detalhes">🗓 Data: 23 de Fevereiro de 2025</p>
+            <p class="detalhes">📍 Local: <a href="https://www.google.com/maps/search/?api=1&query=R.+Wilson+Duarte,+243+-+Jardim+Bonifacio,+São+Paulo" target="_blank">R. Wilson Duarte, 243 - Jardim Bonifacio, São Paulo</a></p>
+            <p class="detalhes">⏰ Horário: 13h00</p>
+            <p class="detalhes">Venha com a camisa do seu time do coração! E não se esqueça do traje de banho, porque a festa vai ser na piscina! 🌊🎉</p>
+        </div>
+
+        <div class="formulario">
+            <h2>Confirme sua Presença</h2>
+            <form onsubmit="event.preventDefault(); confirmarPresenca();">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+                
+                <label for="presenca">Você irá comparecer?</label>
+                <select id="presenca" name="presenca" required>
+                    <option value="Sim">Sim, estarei lá! 🌊</option>
+                    <option value="Não">Infelizmente, não poderei. 😢</option>
+                </select>
+                
+                <button type="submit">Confirmar Presença</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function confirmarPresenca() {
+            var nome = document.getElementById("nome").value;
+            var presenca = document.getElementById("presenca").value;
+            var telefoneBibi = "5511977328791"; 
+
+            if (nome.trim() === "") {
+                alert("Por favor, digite seu nome.");
+                return;
+            }
+
+            var mensagem = "Olá Bibi! Meu nome é " + nome + " e gostaria de confirmar minha presença na sua festa! Minha resposta é: " + presenca + ".";
+            var linkWhatsApp = "https://wa.me/" + telefoneBibi + "?text=" + encodeURIComponent(mensagem);
+
+            window.location.href = linkWhatsApp;
+        }
+
+        
+    </script>
+</body>
+</html>
