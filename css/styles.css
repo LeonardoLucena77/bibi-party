@@ -25,7 +25,7 @@ body {
 }
 
 .logo {
-    width: 280px;
+    width: 220px;
     height: auto;
 }
 
@@ -41,21 +41,30 @@ h1 {
 
 .formulario {
     margin-top: 20px;
-    padding: 15px;
+    padding: 20px;
     background: #fff0f6; /* Um tom suave de branco */
     color: #b08d57; /* Cor dourada */
     border-radius: 10px;
     box-shadow: 0 0 10px #b08d57; /* Cor dourada */
     font-size: 18px; /* Fonte maior nos campos do formulário */
+    max-width: 600px; /* Limitar largura máxima para o formulário */
+    margin-left: auto;
+    margin-right: auto;
 }
 
 input, select, button {
     width: 100%;
     padding: 15px; /* Aumentando o padding para dar mais espaço nos campos */
     margin: 10px 0;
-    border: none;
+    border: 2px solid #b08d57; /* Adicionando borda dourada para os campos */
     border-radius: 5px;
     font-size: 18px; /* Aumentando o tamanho da fonte nos campos */
+    box-sizing: border-box; /* Garantir que o padding não ultrapasse a largura */
+}
+
+input:focus, select:focus {
+    outline: none;
+    border-color: #a07a4c; /* Cor dourada mais escura no foco */
 }
 
 button {
@@ -64,8 +73,18 @@ button {
     font-weight: bold;
     cursor: pointer;
     font-size: 20px; /* Aumentando o tamanho da fonte do botão */
+    border: none;
 }
 
 button:hover {
     background: #a07a4c; /* Cor dourada mais escura */
+}
+
+a {
+    color: #b08d57;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #a07a4c;
 }
