@@ -81,10 +81,10 @@ button:hover {
 }
 
 a {
-    color: #b08d57;
-    text-decoration: none;
+    color: #1e90ff; /* Cor azul */
+    text-decoration: underline; /* Sublinhado para indicar que é um link */
 }
 
 a:hover {
-    color: #a07a4c;
+    color: #a07a4c; /* Cor dourada mais escura quando o link for hover */
 }
