@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, sans-serif;
+    background: url('https://png.pngtree.com/background/20210710/original/pngtree-plant-flowers-background-design-picture-image_975811.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #d63384;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+.convite {
+    background: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px #d63384;
+    border: 15px solid transparent;
+    border-image: url('https://img.freepik.com/vetores-gratis/coroa-floral-rosa-amarela-com-aquarela_65186-3460.png') 30 round;
+}
+.logo {
+    width: 220px;
+height: auto;
+}
+h1 {
+    color: #d63384;
+}
+.detalhes {
+    font-size: 18px;
+    margin: 15px 0;
+}
+.formulario {
+    margin-top: 20px;
+    padding: 15px;
+    background: #fff0f6;
+    color: #d63384;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #d63384;
+}
+input, select, button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+button {
+    background: #d63384;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+button:hover {
+    background: #b0276e;
+}
