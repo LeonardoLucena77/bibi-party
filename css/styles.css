@@ -6,31 +6,39 @@ body {
     text-align: center;
     margin: 0;
     padding: 0;
+    font-size: 18px; /* Tamanho de fonte maior para o corpo */
 }
+
 .container {
     width: 80%;
     margin: auto;
     padding: 20px;
 }
+
 .convite {
     background: #fff; /* Branco */
     padding: 20px;
     border-radius: 15px;
     box-shadow: 0 0 15px #b08d57; /* Cor dourada */
     border: 15px solid transparent;
-    border-image: url('https://img.freepik.com/vetores-gratis/coroa-floral-rosa-amarela-com-aquarela_65186-3460.png') 30 round;
+    border-image: url('https://static.vecteezy.com/ti/vetor-gratis/p1/10973735-fundo-dourado-e-branco-vetor.jpg') 30 round;
 }
+
 .logo {
     width: 220px;
     height: auto;
 }
+
 h1 {
     color: #b08d57; /* Cor dourada */
+    font-size: 36px; /* Aumentando o tamanho do título */
 }
+
 .detalhes {
-    font-size: 18px;
+    font-size: 20px; /* Fonte maior e mais legível */
     margin: 15px 0;
 }
+
 .formulario {
     margin-top: 20px;
     padding: 15px;
@@ -38,21 +46,26 @@ h1 {
     color: #b08d57; /* Cor dourada */
     border-radius: 10px;
     box-shadow: 0 0 10px #b08d57; /* Cor dourada */
+    font-size: 18px; /* Fonte maior nos campos do formulário */
 }
+
 input, select, button {
     width: 100%;
-    padding: 10px;
+    padding: 15px; /* Aumentando o padding para dar mais espaço nos campos */
     margin: 10px 0;
     border: none;
     border-radius: 5px;
-    font-size: 16px;
+    font-size: 18px; /* Aumentando o tamanho da fonte nos campos */
 }
+
 button {
     background: #b08d57; /* Cor dourada */
     color: white;
     font-weight: bold;
     cursor: pointer;
+    font-size: 20px; /* Aumentando o tamanho da fonte do botão */
 }
+
 button:hover {
     background: #a07a4c; /* Cor dourada mais escura */
 }
